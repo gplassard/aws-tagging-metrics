@@ -1,11 +1,12 @@
-const { awscdk } = require('projen');
-const { GithubCredentials } = require('projen/lib/github');
-const { UpgradeDependenciesSchedule } = require('projen/lib/javascript');
+import { AwsCdkTypeScriptApp } from 'projen/lib/awscdk';
+import { GithubCredentials } from 'projen/lib/github';
+import { UpgradeDependenciesSchedule } from 'projen/lib/javascript';
 
-const project = new awscdk.AwsCdkTypeScriptApp({
+const project = new AwsCdkTypeScriptApp({
   cdkVersion: '2.1.0',
   defaultReleaseBranch: 'main',
   name: 'aws-tagging-metrics',
+  projenrcTs: true,
   githubOptions: {
     mergify: false,
     projenCredentials: GithubCredentials.fromPersonalAccessToken({ secret: 'GITHUB_TOKEN' }),
