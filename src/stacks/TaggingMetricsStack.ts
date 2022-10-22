@@ -1,9 +1,10 @@
 import path from 'path';
-import { App, Duration, RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib';
+import { Duration, RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib';
 import { Effect, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 import { Architecture } from 'aws-cdk-lib/aws-lambda';
 import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { LogGroup, RetentionDays } from 'aws-cdk-lib/aws-logs';
+import { Construct } from 'constructs';
 
 export interface Props extends StackProps {
   baseName: string;
@@ -14,8 +15,8 @@ export interface Props extends StackProps {
 }
 
 export class TaggingMetricsStack extends Stack {
-  constructor(app: App, id: string, props: Props) {
-    super(app, id, {
+  constructor(scope: Construct, id: string, props: Props) {
+    super(scope, id, {
       stackName: `${props.baseName}-${props.tags.Env}`,
       tags: props.tags,
     });

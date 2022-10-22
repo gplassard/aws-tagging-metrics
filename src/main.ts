@@ -1,5 +1,5 @@
 import { App } from 'aws-cdk-lib';
-import { TaggingMetricsStack } from './stacks/TaggingMetricsStack';
+import { PipelineStack } from './stacks/PipelineStack';
 
 // for development, use account/region from cdk cli
 const devEnv = {
@@ -9,7 +9,7 @@ const devEnv = {
 
 const app = new App();
 
-new TaggingMetricsStack(app, 'aws-tagging-metrics-dev', {
+new PipelineStack(app, 'pipeline', {
   env: devEnv,
   baseName: 'aws-tagging-metrics',
   tags: {
