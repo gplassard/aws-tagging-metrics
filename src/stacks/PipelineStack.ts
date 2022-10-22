@@ -24,7 +24,7 @@ export class PipelineStack extends Stack {
         input: CodePipelineSource.gitHub('gplassard/aws-tagging-metrics', 'main', {
           authentication: SecretValue.cfnDynamicReference(new CfnDynamicReference(CfnDynamicReferenceService.SSM, 'github-gplassard-oauth')),
         }),
-        commands: ['yarn synth'],
+        commands: ['yarn install', 'yarn cdk synth'],
       }),
     });
 
