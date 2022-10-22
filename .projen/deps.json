@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@types/aws-lambda",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -88,6 +92,18 @@
       "name": "got",
       "version": "12.3.1",
       "type": "override"
+    },
+    {
+      "name": "@aws-lambda-powertools/logger",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-lambda-powertools/metrics",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-sdk/client-resource-groups-tagging-api",
+      "type": "runtime"
     },
     {
       "name": "aws-cdk-lib",

@@ -1,13 +1,5 @@
-import { App, Stack, StackProps } from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-
-export class MyStack extends Stack {
-  constructor(scope: Construct, id: string, props: StackProps = {}) {
-    super(scope, id, props);
-
-    // define resources here...
-  }
-}
+import { App } from 'aws-cdk-lib';
+import { TaggingMetricsStack } from './stacks/TaggingMetricsStack';
 
 // for development, use account/region from cdk cli
 const devEnv = {
@@ -17,7 +9,13 @@ const devEnv = {
 
 const app = new App();
 
-new MyStack(app, 'aws-tagging-metrics-dev', { env: devEnv });
-// new MyStack(app, 'aws-tagging-metrics-prod', { env: prodEnv });
+new TaggingMetricsStack(app, 'aws-tagging-metrics-dev', {
+  env: devEnv,
+  baseName: 'aws-tagging-metrics',
+  tags: {
+    Env: 'dev',
+    Team: 'a',
+  },
+});
 
 app.synth();

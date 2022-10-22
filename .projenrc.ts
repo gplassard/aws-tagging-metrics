@@ -22,5 +22,11 @@ const project = new AwsCdkTypeScriptApp({
       schedule: UpgradeDependenciesSchedule.MONTHLY,
     },
   },
+  deps: [
+    '@aws-sdk/client-resource-groups-tagging-api', '@aws-lambda-powertools/metrics', '@aws-lambda-powertools/logger',
+  ],
+  devDeps: [
+    '@types/aws-lambda',
+  ],
 });
 project.synth();
