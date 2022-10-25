@@ -28,6 +28,38 @@
       "name": "bundle",
       "description": "Prepare assets"
     },
+    "cdk:local:deploy": {
+      "name": "cdk:local:deploy",
+      "steps": [
+        {
+          "exec": "yarn cdk --app \"ts-node ./src/local-deploy.ts\" deploy"
+        }
+      ]
+    },
+    "cdk:local:destroy": {
+      "name": "cdk:local:destroy",
+      "steps": [
+        {
+          "exec": "yarn cdk --app \"ts-node ./src/local-deploy.ts\" destroy"
+        }
+      ]
+    },
+    "cdk:local:diff": {
+      "name": "cdk:local:diff",
+      "steps": [
+        {
+          "exec": "yarn cdk --app \"ts-node ./src/local-deploy.ts\" diff"
+        }
+      ]
+    },
+    "cdk:local:synth": {
+      "name": "cdk:local:synth",
+      "steps": [
+        {
+          "exec": "yarn cdk --app \"ts-node ./src/local-deploy.ts\" synth"
+        }
+      ]
+    },
     "clobber": {
       "name": "clobber",
       "description": "hard resets to HEAD of origin and cleans the local repo",

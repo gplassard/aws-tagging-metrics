@@ -31,7 +31,7 @@ export class TaggingMetricsStack extends Stack {
       initialPolicy: [
         new PolicyStatement({
           effect: Effect.ALLOW,
-          actions: ['tag:GetComplianceSummary'],
+          actions: ['tag:GetResources'],
           resources: ['*'],
         }),
       ],

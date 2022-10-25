@@ -23,10 +23,16 @@ const project = new AwsCdkTypeScriptApp({
     },
   },
   deps: [
-    '@aws-sdk/client-resource-groups-tagging-api', '@aws-lambda-powertools/metrics', '@aws-lambda-powertools/logger',
+    '@aws-sdk/client-resource-groups-tagging-api', '@aws-lambda-powertools/metrics', '@aws-lambda-powertools/logger', 'lodash',
   ],
   devDeps: [
-    '@types/aws-lambda',
+    '@types/aws-lambda', '@types/lodash',
   ],
+  scripts: {
+    'cdk:local:deploy': 'yarn cdk --app "ts-node ./src/local-deploy.ts" deploy',
+    'cdk:local:diff': 'yarn cdk --app "ts-node ./src/local-deploy.ts" diff',
+    'cdk:local:synth': 'yarn cdk --app "ts-node ./src/local-deploy.ts" synth',
+    'cdk:local:destroy': 'yarn cdk --app "ts-node ./src/local-deploy.ts" destroy',
+  },
 });
 project.synth();
