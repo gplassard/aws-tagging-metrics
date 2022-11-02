@@ -1020,10 +1020,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@gplassard/projen-extensions@^0.0.19":
-  version "0.0.19"
-  resolved "https://npm.pkg.github.com/download/@gplassard/projen-extensions/0.0.19/90fdbfb23577f84db450fcdeea3b8e45fba9e825#90fdbfb23577f84db450fcdeea3b8e45fba9e825"
-  integrity sha512-eRpBPsenDdr+4UgztfqxkO3Dvm7mrR6TrMdDb76HQdeEbe3x3wYsGrqa0xdv5qQY1yRVQs6VywShUnuaVQIRIg==
+"@gplassard/projen-extensions@^0.0.20":
+  version "0.0.20"
+  resolved "https://npm.pkg.github.com/download/@gplassard/projen-extensions/0.0.20/bf9c04a4040acdd44f1d6f82551aec97dc3df3c1#bf9c04a4040acdd44f1d6f82551aec97dc3df3c1"
+  integrity sha512-XkwkCg9gh9i9BtUMihScTKRPJ++YisLa7Ae0no3xNwRbSNyvBFUKHcavfT5xAkjAppY67da0Yj39tYrfG+NCgw==
   dependencies:
     projen "^0.65.7"
 
