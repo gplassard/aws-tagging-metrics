@@ -18,7 +18,7 @@ const project = new TypescriptApplicationProject({
     'cdk:local:synth': 'yarn cdk --app "ts-node ./src/local-deploy.ts" synth',
     'cdk:local:destroy': 'yarn cdk --app "ts-node ./src/local-deploy.ts" destroy',
   },
-  gitignore: [...TypescriptApplicationProject.DEFAULT_GITIGNORE, 'cdk.out'],
+  gitignore: ['cdk.out'],
   tsconfig: {
     compilerOptions: {
       skipLibCheck: true,
