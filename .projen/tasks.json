@@ -294,7 +294,7 @@
           "exec": "npm-check-updates --dep dev --upgrade --target=minor"
         },
         {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor"
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor"
         },
         {
           "exec": "npm-check-updates --dep peer --upgrade --target=minor"
@@ -303,13 +303,13 @@
           "exec": "npm-check-updates --dep prod --upgrade --target=minor"
         },
         {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor"
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade"
+          "exec": "yarn upgrade @gplassard/projen-extensions @types/aws-lambda @types/jest @types/lodash @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk esbuild eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit npm-check-updates standard-version ts-jest ts-node typescript @aws-lambda-powertools/logger @aws-lambda-powertools/metrics @aws-sdk/client-resource-groups-tagging-api aws-cdk-lib constructs lodash"
         },
         {
           "exec": "npx projen"
