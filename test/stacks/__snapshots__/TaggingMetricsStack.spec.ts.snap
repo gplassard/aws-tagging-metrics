@@ -24,7 +24,7 @@ exports[`TaggingMetricsStack should produce the expected cloudformation 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "434626b14de620dc23e784d8ffdc4de038b9cec7faee16ab91a4cb1b3c4722b2.zip",
+          "S3Key": "b3e6999911849213be454413764058a4411ee949f3fb72bf81e4e9bde7a08fd6.zip",
         },
         "Environment": {
           "Variables": {
@@ -40,7 +40,7 @@ exports[`TaggingMetricsStack should produce the expected cloudformation 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs18.x",
+        "Runtime": "nodejs16.x",
         "Timeout": 60,
       },
       "Type": "AWS::Lambda::Function",
