@@ -22,7 +22,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
         "EncryptionKey": "alias/aws/s3",
         "Environment": {
           "ComputeType": "BUILD_GENERAL1_SMALL",
-          "Image": "aws/codebuild/standard:6.0",
+          "Image": "aws/codebuild/standard:7.0",
           "ImagePullCredentialsType": "CODEBUILD",
           "PrivilegedMode": false,
           "Type": "LINUX_CONTAINER",
@@ -44,7 +44,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
     },
     "build": {
       "commands": [
-        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"434626b14de620dc23e784d8ffdc4de038b9cec7faee16ab91a4cb1b3c4722b2:current_account-current_region\\""
+        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"b3e6999911849213be454413764058a4411ee949f3fb72bf81e4e9bde7a08fd6:current_account-current_region\\""
       ]
     }
   }
@@ -351,7 +351,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
                   "Version": "1",
                 },
                 "Configuration": {
-                  "EnvironmentVariables": "[{"name":"_PROJECT_CONFIG_HASH","type":"PLAINTEXT","value":"921875c4998152a7403db28e1543458715709042530e67fa3b02d4d0fa9eb0cc"}]",
+                  "EnvironmentVariables": "[{"name":"_PROJECT_CONFIG_HASH","type":"PLAINTEXT","value":"662a19edffd7e6cf5f25ebbab0daa160570be44d767fe3ff5a6178eecd6b3946"}]",
                   "ProjectName": {
                     "Ref": "pipelinePipelineBuildSynthCdkBuildProject4237770A",
                   },
@@ -388,7 +388,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
                   "Version": "1",
                 },
                 "Configuration": {
-                  "EnvironmentVariables": "[{"name":"_PROJECT_CONFIG_HASH","type":"PLAINTEXT","value":"d481eb7e52fa70e98aa3e0e22b2f258bef28632bc13e90928d96c7e1479e3a2b"}]",
+                  "EnvironmentVariables": "[{"name":"_PROJECT_CONFIG_HASH","type":"PLAINTEXT","value":"167eef1378d6e6ad8c4c8da3461f900d6e066cd0916052ee812a8d94b87ad38c"}]",
                   "ProjectName": {
                     "Ref": "pipelineUpdatePipelineSelfMutation14A96D2F",
                   },
@@ -693,7 +693,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
         "EncryptionKey": "alias/aws/s3",
         "Environment": {
           "ComputeType": "BUILD_GENERAL1_SMALL",
-          "Image": "aws/codebuild/standard:6.0",
+          "Image": "aws/codebuild/standard:7.0",
           "ImagePullCredentialsType": "CODEBUILD",
           "PrivilegedMode": false,
           "Type": "LINUX_CONTAINER",
@@ -1026,7 +1026,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
         "EncryptionKey": "alias/aws/s3",
         "Environment": {
           "ComputeType": "BUILD_GENERAL1_SMALL",
-          "Image": "aws/codebuild/standard:6.0",
+          "Image": "aws/codebuild/standard:7.0",
           "ImagePullCredentialsType": "CODEBUILD",
           "PrivilegedMode": false,
           "Type": "LINUX_CONTAINER",
