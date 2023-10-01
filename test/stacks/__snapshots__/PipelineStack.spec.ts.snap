@@ -44,7 +44,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
     },
     "build": {
       "commands": [
-        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"b3e6999911849213be454413764058a4411ee949f3fb72bf81e4e9bde7a08fd6:current_account-current_region\\""
+        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"c002d888ddef79ddca6b76a800b76a40ac055986cd0e367ac7ac602706618eed:current_account-current_region\\""
       ]
     }
   }
