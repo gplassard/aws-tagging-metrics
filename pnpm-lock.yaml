@@ -73,6 +73,9 @@ devDependencies:
   npm-check-updates:
     specifier: ^16
     version: 16.14.6
+  projen:
+    specifier: ^0.76.16
+    version: 0.76.16(constructs@10.3.0)
   standard-version:
     specifier: ^9
     version: 9.5.0
