@@ -22,3 +22,5 @@ dist
 tsconfig.tsbuildinfo
 /.eslintrc.json
 cdk.out
+/.gitattributes
+/.projenrc.ts
