@@ -44,7 +44,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
     },
     "build": {
       "commands": [
-        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"216038e17e705692f3edecfed1263b68b67c66f1cfef00016258767d20247fed:current_account-current_region\\""
+        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"ba10370e63b33c4a0a523c4ba61aee89875a3ac074218102d22d4e1c4c4d0bb6:current_account-current_region\\""
       ]
     }
   }
@@ -306,6 +306,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
           "Type": "S3",
         },
         "Name": "stack-pipeline-dev",
+        "PipelineType": "V1",
         "RestartExecutionOnUpdate": true,
         "RoleArn": {
           "Fn::GetAtt": [

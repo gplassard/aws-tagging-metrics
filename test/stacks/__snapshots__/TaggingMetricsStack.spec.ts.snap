@@ -24,7 +24,7 @@ exports[`TaggingMetricsStack should produce the expected cloudformation 1`] = `
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-\${AWS::AccountId}-\${AWS::Region}",
           },
-          "S3Key": "216038e17e705692f3edecfed1263b68b67c66f1cfef00016258767d20247fed.zip",
+          "S3Key": "ba10370e63b33c4a0a523c4ba61aee89875a3ac074218102d22d4e1c4c4d0bb6.zip",
         },
         "Environment": {
           "Variables": {
