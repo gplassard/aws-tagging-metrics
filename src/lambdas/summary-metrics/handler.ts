@@ -1,5 +1,5 @@
 import { Logger } from '@aws-lambda-powertools/logger';
-import { Metrics, MetricUnits } from '@aws-lambda-powertools/metrics';
+import { Metrics, MetricUnit } from '@aws-lambda-powertools/metrics';
 import {
   GetResourcesCommand,
   GetResourcesCommandOutput,
@@ -39,7 +39,7 @@ export const handler = async (_event: {}, context: Context) => {
       for (const entry of tagHistogram) {
         const valueMetric = metrics.singleMetric();
         valueMetric.addDimension('Value', entry.value);
-        valueMetric.addMetric(tag, MetricUnits.Count, entry.count);
+        valueMetric.addMetric(tag, MetricUnit.Count, entry.count);
       }
     }
   } while (!!token);
