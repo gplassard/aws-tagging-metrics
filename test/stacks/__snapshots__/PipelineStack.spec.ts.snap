@@ -44,7 +44,7 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
     },
     "build": {
       "commands": [
-        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"d3d1bf93bc8ea7cf1185bdd5101927f033e8cd3952dafc989e591452c0084302:current_account-current_region\\""
+        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"e967b5ef4c6386dbf5baf5a5b7602cb04ef9d30664513a615f288b742da1bed8:current_account-current_region\\""
       ]
     }
   }
@@ -63,28 +63,6 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
               "Effect": "Allow",
               "Principal": {
                 "Service": "codebuild.amazonaws.com",
-              },
-            },
-            {
-              "Action": "sts:AssumeRole",
-              "Effect": "Allow",
-              "Principal": {
-                "AWS": {
-                  "Fn::Join": [
-                    "",
-                    [
-                      "arn:",
-                      {
-                        "Ref": "AWS::Partition",
-                      },
-                      ":iam::",
-                      {
-                        "Ref": "AWS::AccountId",
-                      },
-                      ":root",
-                    ],
-                  ],
-                },
               },
             },
           ],
