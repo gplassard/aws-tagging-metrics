@@ -39,12 +39,12 @@ exports[`PipelineStack should produce the expected cloudformation 1`] = `
   "phases": {
     "install": {
       "commands": [
-        "npm install -g cdk-assets@2"
+        "npm install -g cdk-assets@latest"
       ]
     },
     "build": {
       "commands": [
-        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"a118b575c93cdc1bb79643094955a3b101e6c5ae29974e6839a014ab553290a2:current_account-current_region\\""
+        "cdk-assets --path \\"assembly-PipelineStack-stage/PipelineStackstagestack837418BF.assets.json\\" --verbose publish \\"3a8e3a68e6688dd7aa20fbc6b17d4568272b273e25c980902a34476fb76f8003:current_account-current_region\\""
       ]
     }
   }
