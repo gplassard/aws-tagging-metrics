@@ -291,7 +291,7 @@
       },
       "steps": [
         {
-          "exec": "pnpm dlx npm-check-updates@16 --upgrade --target=latest --peer --dep=dev,peer,prod,optional --filter=@gplassard/projen-extensions,@types/aws-lambda,@types/jest,@types/lodash,aws-cdk,esbuild,eslint-import-resolver-typescript,eslint-plugin-import,jest,projen,ts-jest,ts-node,typescript,@aws-lambda-powertools/logger,@aws-lambda-powertools/metrics,@aws-sdk/client-resource-groups-tagging-api,aws-cdk-lib,constructs,lodash"
+          "exec": "pnpm dlx npm-check-updates@16 --upgrade --target=latest --peer --dep=dev,peer,prod,optional --filter=@gplassard/projen-extensions,@types/aws-lambda,@types/jest,@types/lodash,@types/node,aws-cdk,esbuild,eslint-import-resolver-typescript,eslint-plugin-import,jest,projen,ts-jest,ts-node,typescript,@aws-lambda-powertools/logger,@aws-lambda-powertools/metrics,@aws-sdk/client-resource-groups-tagging-api,aws-cdk-lib,constructs,lodash"
         },
         {
           "exec": "pnpm i --no-frozen-lockfile"
